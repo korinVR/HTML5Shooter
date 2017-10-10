@@ -26,7 +26,7 @@ def convert_image_files(output_file, image_files, property):
         output = "var " + property + " = {\n"
         
         for file in image_files:
-            print file
+            print(file)
             
             id = file.replace("./", "")
             
@@ -34,7 +34,7 @@ def convert_image_files(output_file, image_files, property):
             binary = fin.read()
             fin.close()
             
-            output += '\t"' + id + '" : "data:image/png;base64,' + base64.b64encode(binary) + '",\n'
+            output += '\t"' + id + '" : "data:image/png;base64,' + base64.b64encode(binary).decode('ascii') + '",\n'
         
         output = output[0:-2]
         output += "\n};\n"
@@ -44,11 +44,11 @@ def convert_image_files(output_file, image_files, property):
 
 
 def concat_files(output_file, in_files):
-    with open(output_file, "w") as fout:
+    with open(output_file, "w", encoding='utf-8') as fout:
         for file in in_files:
-            print file
+            print(file)
             
-            with open(file) as fin:
+            with open(file, encoding='utf-8') as fin:
                 src = fin.read()
             
             fout.write(src)
