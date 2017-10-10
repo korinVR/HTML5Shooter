@@ -1,8 +1,8 @@
 HTML5 Shooter
 =============
-A shmup example for HTML5 Canvas (experimental and incomplete)
+A shmup example for HTML5 Canvas (experimental and not complete)
 
-Working demo is on http://framesynthesis.com/games/html5shooter/
+Working demo is on https://framesynthesis.com/games/html5shooter/
 
 # Build
 
@@ -16,5 +16,5 @@ MIT License
 
 Katsuomi Kobayashi ([@KatsuomiK](https://twitter.com/KatsuomiK))
 
-http://framesynthesis.com/
+https://framesynthesis.com/
 

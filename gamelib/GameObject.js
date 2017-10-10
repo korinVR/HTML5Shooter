@@ -3,10 +3,10 @@
  *	@constructor
  */
 gamelib.GameObject = function () {
-	this.alive = true;
-	this.aabb = {};
-	
-	this.startTime = gamelib.GameLoop.getTime();
+    this.alive = true;
+    this.aabb = {};
+    
+    this.startTime = gamelib.GameLoop.getTime();
 };
 
 /**
@@ -19,7 +19,7 @@ gamelib.GameObject.prototype.update = function (deltaTime) {};
  *	ゲームオグジェクトを破棄します。
  */
 gamelib.GameObject.prototype.destroy = function () {
-	this.alive = false;
+    this.alive = false;
 };
 
 /**
@@ -35,12 +35,12 @@ gamelib.GameObject.prototype.onCollide = function (/**GameObject*/ another) {};
  *	@param r 矩形の幅・高さの半分の長さ
  */
 gamelib.GameObject.prototype.setAABB = function (/**Number*/ x,
-												 /**Number*/ y,
-												 /**Number*/ r) {
-	this.aabb.x0 = x - r;
-	this.aabb.y0 = y - r;
-	this.aabb.x1 = x + r;
-	this.aabb.y1 = y + r;
+                                                 /**Number*/ y,
+                                                 /**Number*/ r) {
+    this.aabb.x0 = x - r;
+    this.aabb.y0 = y - r;
+    this.aabb.x1 = x + r;
+    this.aabb.y1 = y + r;
 };
 
 /**
@@ -48,7 +48,7 @@ gamelib.GameObject.prototype.setAABB = function (/**Number*/ x,
  *	@return 時間（秒）
  */
 gamelib.GameObject.prototype.getTime = function () /**Number*/ {
-	return gamelib.GameLoop.getTime() - this.startTime;
+    return gamelib.GameLoop.getTime() - this.startTime;
 };
 
 /**
@@ -58,7 +58,7 @@ gamelib.GameObject.prototype.getTime = function () /**Number*/ {
  *	@return フレーム
  */
 gamelib.GameObject.prototype.getFrame = function (/**Number*/ interval) /**Number*/ {
-	return this.getTime() / interval;
+    return this.getTime() / interval;
 };
 
 

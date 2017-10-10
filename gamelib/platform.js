@@ -1,7 +1,7 @@
 
 // dummy console.log for IE
 if (!window.console) {
-	console = { log: function () {} };
+    console = { log: function () {} };
 }
 
 // detect platform
@@ -17,26 +17,26 @@ console.log("navigator.platform = " + navigator.platform);
 console.log("navigator.userAgent = " + navigator.userAgent);
 
 if (navigator.userAgent.indexOf('iPhone') >= 0 ||
-	navigator.userAgent.indexOf('iPad') >= 0) {
-	isiOS = true;
-	isMobile = true;
-	isTouchScreen = true;
+    navigator.userAgent.indexOf('iPad') >= 0) {
+    isiOS = true;
+    isMobile = true;
+    isTouchScreen = true;
 }
 
 if (navigator.userAgent.indexOf('Android') >= 0) {
-	isMobile = true;
-	isTouchScreen = true;
+    isMobile = true;
+    isTouchScreen = true;
 }
 
 if (navigator.userAgent.indexOf('WebKit') >= 0) {
-	isWebKit = true;
+    isWebKit = true;
 }
 
 if (navigator.userAgent.indexOf('Firefox') >= 0) {
-	isFirefox = true;
+    isFirefox = true;
 }
 
 if (navigator.userAgent.indexOf('Opera') >= 0) {
-	isOpera = true;
+    isOpera = true;
 }
 
