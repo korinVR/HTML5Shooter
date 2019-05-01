@@ -4,7 +4,7 @@ A shmup example for HTML5 Canvas (experimental and not complete)
 
 Working demo is on https://framesynthesis.com/games/html5shooter/
 
-# Build
+# To build
 
 Run build/build.py. uglifyjs is required.
 
@@ -14,7 +14,7 @@ MIT License
 
 # Copyright
 
-Katsuomi Kobayashi ([@KatsuomiK](https://twitter.com/KatsuomiK))
+Katsuomi Kobayashi ([@korinVR](https://twitter.com/korinVR) / [@korinVR_en](https://twitter.com/korinVR_en))
 
 https://framesynthesis.com/
 
