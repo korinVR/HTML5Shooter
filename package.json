@@ -1,0 +1,16 @@
+{
+  "name": "html5shooter",
+  "version": "1.0.0",
+  "description": "A shmup example for HTML5 Canvas",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "",
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "parcel-bundler": "^1.12.3"
+  }
+}
